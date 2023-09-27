@@ -1,0 +1,36 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #ff6800;
+    box-shadow: -5px 5px 5px #dedede;
+}
+
+.header-container{
+    width: 75%;
+    margin: auto;
+    height: 75px;
+}
+
+.container-link{
+    padding: 0 10px;
+}
+
+.link{
+    font-size: 13px;
+    padding: 0 10px 0 10px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.logo{
+    width: 140px;
+}
+
+
+
