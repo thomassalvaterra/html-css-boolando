@@ -5,6 +5,24 @@ body{
 header{
     background-color: #ff6800;
     box-shadow: -5px 5px 5px #dedede;
+
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+}
+
+main{
+    margin-top: 100px;
+}
+
+footer{
+    background-color: #222222;
+    color: white;
+    margin-top: 10px;
 }
 
 .header-container{
@@ -13,8 +31,95 @@ header{
     height: 75px;
 }
 
+.container-main{
+    width: 75%;
+    margin: auto;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    height: 75px;
+}
+
 .container-link{
-    padding: 0 10px;
+    padding-right: 8px;
+}
+
+.container-icon{
+    padding-left: 8px;
+}
+
+.card{
+    width: calc(100% / 3);
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+main > .container-main{
+    flex-wrap: wrap;
+}
+
+.card-image{
+    position: relative;
+}
+
+.card-image:hover{
+    border: solid 2px red;
+}
+
+.card-image:hover .main-image{
+    display: none;
+}
+
+.card-image:hover .secondary-image{
+    display: inline-block;
+}
+
+.card-image > img{
+    width: 100%;
+}
+
+.card-image .main-image{
+    display: inline-block;
+}
+
+.card-image .secondary-image{
+    display: none;
+}
+
+.wishlist{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 16px;
+    background: white;
+}
+
+.wishlist:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.badges{
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.badge{
+    color: white;
+    padding: 8px;
+}
+
+.bg-discount{
+    background-color: red;
+}
+
+.bg-eco{
+    background-color: green;
 }
 
 .link{
@@ -32,5 +137,14 @@ a:link, a:visited{
     width: 140px;
 }
 
+.article-price{
+    color: red;
+}
 
+.no-price{
+    text-decoration: line-through;
+}
 
+.foot-item{
+    list-style: none;
+}
